@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="Include.js"></script>
+<title>Eshu 2.0</title>
+</head>
+
+<body>
+	<h2 id="title">Eshu 2.0</h2>
+	<!-- i class="material-icons">face</i>
+	<button id="btntext"    type="button" onclick="alert(34)"></button-->
+	
+	<div id="menu">
+		<div id="inputbox">
+		<p>Selecione o ficheiro de configuração</p>
+			<input type="file" id="fileinput" />
+		</div>
+		
+	</div>	
+	<div id="displayC">
+	
+		<div id="menuButton">
+			<button id="btnCopy"  class="buttonMenu" type="button" onclick="eshuCopy()"></button>
+			<button id="btnCut"  class="buttonMenu" type="button" onclick="eshuCut()"></button>
+			<button id="btnPaste" class="buttonMenu" type="button" onclick="eshuPaste()"></button>
+			<button id="btnDelete" class="buttonMenu" type="button" onclick="eshuDelete()"></button>
+			<button id="btnClear" class="buttonMenu" type="button" onclick="eshuClear()"></button>
+			<button id="btnUndo" class="buttonMenu" type="button" onclick="eshuUndo()"></button>
+			<button id="btnRedo" class="buttonMenu" type="button" onclick="eshuRedo()"></button>
+		</div>
+		<div id="mygraph">
+			
+			<div id="graphDiv">
+			<!-- Eshu graph will be created here --> 
+			</div>
+		</div>
+		<div id="editor" style="margin: 33px">
+				
+				<div id="opt" style="display:block">
+					<!--<input id="inputFileNameToSaveAs"></input>
+					<button onclick="saveTextAsFile()">Save Text to File</button>
+					<button onclick="clearFileAsText()">Clear</button>
+					 <input type="file" id="fileToLoad">
+					<button onclick="loadFileAsText()" >Load Selected File</button>  -->
+					
+					<button onclick="importGraph()">Import To Graph</button>
+					<button onclick="importGraphDiff()">Import To GraphDiff</button>
+					<button onclick="clearFileAsText()">Clear</button>
+					<button onclick="exportGraph()">Export To Graph</button>
+				</div>
+				<textarea id="inputTextToSave" style="width: 393px; height: 393px "></textarea>
+				
+		</div>
+</div>
+</body>
+</html>
